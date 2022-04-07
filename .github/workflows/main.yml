@@ -1,6 +1,6 @@
-- name: Send email
+name: Send email
 on:
-  push:
+  push: 
     branches: [ master ]
   pull_request:
     branches: [ master ]
