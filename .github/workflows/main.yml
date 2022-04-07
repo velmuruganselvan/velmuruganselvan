@@ -1,0 +1,12 @@
+- name: Send email
+  uses: devellany/send-mailer@v1.0.2
+  with:
+    host: smtp.google.com
+        port: 465
+        account: ${{secrets.ACCOUNT}}
+        password: ${{secrets.MAIL_PASSWORD}}
+        sender: TEST
+        from: svelmurugansuresh@gmail.com
+        to: svelmurugansuresh@gmail.com
+        subject: Test Workflow
+        body: Sample Message
